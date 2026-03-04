@@ -1,6 +1,6 @@
 # AI6 Workshop 6W: Making Things Better with Model Tuning
 
-This repo contains the learner and coach materials for **Workshop 6W** (Unit 6 — Optimisation).
+This repo contains the learner and coach materials for **Workshop 6W** (Unit 6: Optimisation).
 
 Unit 6 is the “mathsy” part of AI6. We’re **not** going to do calculus on a whiteboard, but we **are** going to use the real words you’ll see in papers and tooling: **loss**, **gradients (partial derivatives)**, **stochastic gradient descent (SGD)**, **learning rate**, and **generalisation**.
 
@@ -14,7 +14,7 @@ In this workshop we make Unit 6 feel real by watching optimisation happen inside
 
 ---
 
-## Fine‑tuning in plain English (read this before you run anything)
+## Fine‑tuning in plain English
 
 Imagine you hire a graduate who already speaks excellent English. They understand grammar, tone, and context because they’ve read a huge amount of text.
 
@@ -55,7 +55,7 @@ By the end you will be able to:
 
 ---
 
-## What to look at (metrics, explained like a human)
+## What to look at (metrics, explained)
 
 When you train, you’ll see two kinds of signals.
 
@@ -95,10 +95,10 @@ This workshop is **cloud‑neutral**. You don’t need AWS/Azure/GCP services �
 
 Pick the option that creates the least friction for your cohort:
 
-### Option A (recommended): Local laptop + venv
+### Option A: Local laptop + venv
 Best when learners can install Python and you want them to practice a “real repo” workflow.
 
-### Option B: Google Colab
+### Option B: Google Colab or similar
 Best when you want the lowest setup time and reliable downloads. (Use synthetic/public data only.)
 
 ### Option C: Pluralsight Cloud Sandbox (AWS or Azure)
@@ -118,21 +118,17 @@ Full step-by-step instructions for both providers are in `TROUBLESHOOTING.md`.
 - Or use an Azure ML compute instance: `Standard_DS11_v2` is the smallest comfortable option
 - Install dependencies and pre-cache as above
 
-**IaC (Infrastructure as Code):** No IaC is required for this workshop. The resources
-needed (a single Linux VM per learner, or one shared VM per group) are simple enough to
-provision manually via the cloud console in under 10 minutes. Terraform or CloudFormation
-would add setup complexity without meaningful benefit for a one-day session. If your
-programme runs multiple cohorts and needs repeatable provisioning, a simple shell
-provisioning script is provided in `TROUBLESHOOTING.md` — that is sufficient.
+**No Infra-as-code:** No IaC is required for this workshop. If you need
+repeatable provisioning, a simple shell provisioning script is provided
+in `TROUBLESHOOTING.md` that is sufficient.
 
 **Minimum requirements (either provider):**
 - Linux VM with Python 3.10 or later
 - At least 4 GB RAM (DistilBERT requires ~500 MB; 4 GB gives comfortable headroom)
 - Outbound HTTPS to `huggingface.co` and `pypi.org` (or use Plan B if blocked)
 
-> Pre-cache the model before the session. If 20 learners download DistilBERT
-> simultaneously, even a good connection will struggle. Run the cache command
-> once per machine before learners arrive (see `TROUBLESHOOTING.md`).
+> Pre-cache the model before the session. Run the cache command
+> once per machine (see `TROUBLESHOOTING.md`).
 
 ---
 
@@ -202,5 +198,3 @@ This workshop is intentionally built around the Unit 6.2 concepts:
 - learning rate: “how big are your steps?”
 - schedules: “adapting over time”
 - why training costs time + money
-
-See: `6-2-mathematical-optimisation-techniques-in-ml-9NM9H_74.pdf` (provided separately in the AI6 unit assets).
