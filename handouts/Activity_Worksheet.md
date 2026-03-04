@@ -1,7 +1,7 @@
 # Workshop 6W Activity Worksheet: "Optimisation in the Wild"
 
-This worksheet is your evidence document for today. Keep it — you will use it directly
-in your Task 6 submission.
+This worksheet is your evidence document for today.
+It could also help you with Task 6 :-)
 
 In Unit 6 you learned that training is optimisation: we measure how wrong we are
 (**loss**) and take repeated steps that make the model less wrong. The key vocabulary
