@@ -194,11 +194,11 @@ Record your source below:
 
 ---
 
-## Task 6 submission checklist
+## Task 6 helpful mapping
 
-Before you submit Task 6, confirm you have the following:
+If you're stuck with Task 6 (not part of the workshop), you could lean on this workshop for inspiration.
 
-| Item | Source in today's work | Done? |
+| Item | Source in today's work | Helpful? |
 |---|---|---|
 | Before/after performance comparison (upload) | Baseline + trained metrics from Part B | ☐ |
 | S9 reflection: specific metrics used | Part B experiment log + Part C Q1 | ☐ |
