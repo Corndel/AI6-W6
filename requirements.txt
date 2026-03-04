@@ -1,0 +1,17 @@
+# Core workshop dependencies
+# (Upper bounds help keep the workshop stable across environments.)
+
+datasets>=2.16.0,<3
+transformers>=4.46.0,<5
+accelerate>=0.26.0,<1
+
+torch>=2.1.0
+
+# Data + metrics
+pandas>=2.0.0
+scikit-learn>=1.3.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+
+# Notebooks
+jupyterlab>=4.0.0
