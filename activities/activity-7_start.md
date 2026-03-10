@@ -40,10 +40,10 @@ Credible sources include:
 - A published industry or government/professional body report
 
 **Suggested search terms:**
-- `parameter-efficient fine-tuning LoRA 2024`
+- `parameter-efficient fine-tuning LoRA`
 - `learning rate schedule transformer best practice`
 - `AdamW optimiser comparison`
-- `model training carbon footprint ML`
+- `training carbon footprint ML`
 - `catastrophic forgetting mitigation language models`
 
 Record your source in the Part E table of the Activity Worksheet:

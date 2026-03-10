@@ -15,7 +15,7 @@ Today's key idea:
 
 ---
 
-## Part A — Quick diagnosis (10 minutes, pairs)
+## Part A — Quick diagnosis (10 minutes, groups of 2–4)
 
 Match each symptom to its most likely cause. Discuss with a partner before you commit
 to an answer.
@@ -186,9 +186,9 @@ Record your source below:
 > how staying current with this development is relevant to your organisation's use of ML.
 
 **Suggested search terms:**
-- "parameter-efficient fine-tuning LoRA 2024"
+- "parameter-efficient fine-tuning LoRA"
 - "learning rate schedule transformer best practice"
-- "AdamW optimiser comparison 2024"
+- "AdamW optimiser comparison"
 - "model training carbon footprint"
 - "catastrophic forgetting mitigation language models"
 

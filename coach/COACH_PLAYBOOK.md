@@ -85,9 +85,14 @@ Adjust the start time to suit your cohort; the internal proportions are what mat
 
 ### MORNING BLOCK 1 — Framing and orientation (09:00–09:45, 45 minutes)
 
-#### 09:00–09:15 — Welcome, objectives, KSB overview (15 minutes)
+#### 09:00–09:15 — Welcome, safeguarding check-in, objectives, KSB overview (15 minutes)
 
-Welcome learners and set the frame for the day. Cover:
+The first slide after the title is **"Before we start"**. Display it and give it a moment.
+
+- **Safeguarding:** Tell learners that if they have concerns about anyone during the day, they should come to you directly — you know how to take it forward. If anyone is unsure about their organisation's reporting process, now is the time to ask.
+- **Wellbeing check-in:** Ask learners to turn to the person next to them and answer honestly: "How are you doing today?" Then ask the room: "What is one kind thing you have done for yourself this month?" There is no right answer and no obligation to share publicly. Keep it brief — 2 minutes total. The point is to notice how people are arriving.
+
+Then set the frame for the day. Cover:
 
 - What this workshop is for: making Unit 6 feel real by running optimisation live
 - The KSBs this day evidences (K18, S9, S31/K28, B1, B3, B5) — name them explicitly
@@ -103,6 +108,12 @@ Say something like:
 > Let us get into it."
 
 #### 09:15–09:30 — Talk track: fine-tuning in plain English (15 minutes)
+
+Before the fine-tuning story, display the **"You've seen this before"** slide. Read through the examples with the room — medication titration, interest rate decisions, physio programmes, revision technique. Keep it brief and conversational:
+
+> "These patterns — too cautious, too aggressive, and just right — are not ML-specific. You have all encountered them somewhere. In a moment you are going to watch them happen inside a training loop with numbers you can measure. But the concepts are not new to you."
+
+Give the room 30 seconds to react, then move on to the fine-tuning story.
 
 Deliver the framing story using the talk track below. Keep it conversational; do not read
 from a script.
@@ -140,10 +151,11 @@ from a script.
 > meaningful changes. Too high: you sprint and overshoot, sometimes causing oscillation
 > or NaNs. Just right: smooth improvement. That is what we are going to observe live today."
 
-#### 09:30–09:45 — Curve diagnosis mini-activity (15 minutes)
+#### 09:30–09:45 — Curve diagnosis mini-activity (Activity 1, 15 minutes)
 
-Hand out or display the three training curve images from `assets/`. Ask learners to work
-in pairs to match each curve to its most likely cause before you reveal the answers.
+Display the **"Activity 1 — Warm-Up: Curve Diagnosis"** header slide, then move to the curves image slide.
+
+Ask learners to work in **groups of 2–4** to match each curve to its most likely cause before you reveal the answers. Task 3 asks which of the "You've seen this before" examples felt familiar — invite brief responses, one sentence each. This is a reaction, not a construction task: learners are choosing from examples they have just seen, not hunting for their own analogies.
 
 Reveal and discuss:
 - What does a healthy curve look like?
@@ -208,7 +220,15 @@ Say:
 
 #### 10:40–11:30 — Group runs (50 minutes)
 
-Groups run their assigned preset. Coach checks in.
+Groups run their assigned preset. Structure the block explicitly:
+
+**0–25 minutes:** Groups run training and record metrics as each epoch appears. Circulate — check in with each group once in this period. Note who is progressing and who may need speed dial adjustments.
+
+**At 25 minutes — midpoint pulse:** Call a brief pause across all groups. Ask each group to call one word to the room: **"moving"**, **"stalled"**, or **"crashed"**. No explanation needed — just the word. This breaks the isolation without disrupting the experiment, and gives you a rapid read of the room before the second half.
+
+**25–50 minutes:** Groups inspect their curve, complete the experiment log entry, and run an extension if time allows.
+
+Coach tip: the midpoint pulse also surfaces any groups that have silently hit a problem. A group that calls "crashed" may need a quick conversation; a group that calls "stalled" may need speed dial guidance.
 
 **Common issues and responses:**
 
