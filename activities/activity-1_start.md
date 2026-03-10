@@ -66,4 +66,4 @@ Choose **one** of the unhealthy curves. Write one or two sentences explaining wh
 
 ---
 
-🎓 **Complete** — proceed to [Activity 2](../activity-2/activity-2_start.md)
+🎓 **Complete** — proceed to [Activity 2](activity-2_start.md)

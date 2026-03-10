@@ -57,13 +57,15 @@ Work in groups of **3–4** (pairs if numbers require). Agree before you start:
 
 📓 **Notebook:** Run the training cells in sequence.
 
-Watch the output as each epoch completes:
+The Trainer will print a progress bar as each batch runs, then a results table after each epoch. Look for these columns:
 
 ```
-Epoch 1/3 | train_loss: 0.842 | val_loss: 0.791 | accuracy: 0.641 | f1: 0.638
+Epoch | Training Loss | Validation Loss | Accuracy | F1
+  1   |    0.8420     |     0.7910      |  0.6410  | 0.6380
+  2   |    0.6310     |     0.6240      |  0.7280  | 0.7190
 ```
 
-Record each epoch's metrics in your experiment log **as they appear** — do not wait until training finishes.
+Record the `Training Loss`, `Validation Loss`, `Accuracy`, and `F1` values from each epoch row in your experiment log **as they appear** — do not wait until training finishes.
 
 💡 Your coach(es) will be circulating throughout. If training is very slow or you hit an error, flag them early rather than waiting.
 
@@ -118,4 +120,4 @@ If your run finished early, try a second run with a slightly adjusted value — 
 
 ---
 
-🎓 **Complete** — proceed to [Activity 4](../activity-4/activity-4_start.md)
+🎓 **Complete** — proceed to [Activity 4](activity-4_start.md)

@@ -100,30 +100,30 @@ If metrics barely move:
 
 ## Workshop Structure
 
-Read the introduction above first to understand the scenario. You may also wish to look ahead to [Activity 7](activities/activity-7/activity-7_start.md) before starting Activity 2, as it asks you to gather your experiment log entries from earlier activities — there is no harm in knowing what you are building towards.
+Read the introduction above first to understand the scenario. You may also wish to look ahead to [Activity 7](activities/activity-7_start.md) before starting Activity 2, as it asks you to gather your experiment log entries from earlier activities — there is no harm in knowing what you are building towards.
 
 ### Reading the Training Loop
 
 | Activity | Title | Focus |
 |---|---|---|
-| [Activity 1](activities/activity-1/activity-1_start.md) | Curve Diagnosis | Match symptoms to causes; stakeholder framing |
-| [Activity 2](activities/activity-2/activity-2_start.md) | Environment Setup & Baseline | Set up the environment; record the "before" measurement |
-| [Activity 3](activities/activity-3/activity-3_start.md) | Group Learning Rate Experiment | Run your group's preset; record a reproducible experiment log |
-| [Activity 4](activities/activity-4/activity-4_start.md) | Share & Compare | Report results; whole-group discussion; engineering conclusion |
+| [Activity 1](activities/activity-1_start.md) | Curve Diagnosis | Match symptoms to causes; stakeholder framing |
+| [Activity 2](activities/activity-2_start.md) | Environment Setup & Baseline | Set up the environment; record the "before" measurement |
+| [Activity 3](activities/activity-3_start.md) | Group Learning Rate Experiment | Run your group's preset; record a reproducible experiment log |
+| [Activity 4](activities/activity-4_start.md) | Share & Compare | Report results; whole-group discussion; engineering conclusion |
 
 ### Diagnose, Reflect, and Scan
 
 | Activity | Title | Focus |
 |---|---|---|
-| [Activity 5](activities/activity-5/activity-5_start.md) | Convergence Check | Run convergence cells; connect maths to compute cost (K18) |
-| [Activity 6](activities/activity-6/activity-6_start.md) | Data Quality & Uncertainty | Identify data limitations; practise honest stakeholder caveats (B5) |
-| [Activity 7](activities/activity-7/activity-7_start.md) | Reflection & Horizon Scan | Write Part C reflections; find Task 6 horizon scan source (S31/K28) |
+| [Activity 5](activities/activity-5_start.md) | Convergence Check | Run convergence cells; connect maths to compute cost (K18) |
+| [Activity 6](activities/activity-6_start.md) | Data Quality & Uncertainty | Identify data limitations; practise honest stakeholder caveats (B5) |
+| [Activity 7](activities/activity-7_start.md) | Reflection & Horizon Scan | Write Part C reflections; find Task 6 horizon scan source (S31/K28) |
 
 ### Optional — Going Further
 
 | Activity | Title | Focus |
 |---|---|---|
-| [Activity 8](activities/activity-8-going-further/activity-8_start-going-further.md) | Extensions | Schedule comparison / freeze encoder / error analysis / W&B tracking |
+| [Activity 8](activities/activity-8_start-going-further.md) | Extensions | Schedule comparison / freeze encoder / error analysis / W&B tracking |
 
 ---
 

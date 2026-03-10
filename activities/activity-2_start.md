@@ -74,18 +74,18 @@ These cells evaluate the model *before* any fine-tuning. Record the results in y
 Find the **speed dial cells** near the top of the notebook. They look like:
 
 ```python
-TRAIN_SUBSET = 600
-MAX_LENGTH   = 128
-EPOCHS       = 3
+TRAIN_SUBSET = 800
+MAX_LENGTH   = 96
+EPOCHS       = 2
 ```
 
 💡 **Tip — if training is going to be slow:**
 
 | Setting | Default | Reduce to |
 |---|---|---|
-| `TRAIN_SUBSET` | 600 | 300–400 |
-| `MAX_LENGTH` | 128 | 64 |
-| `EPOCHS` | 3 | 1–2 |
+| `TRAIN_SUBSET` | 800 | 300–400 |
+| `MAX_LENGTH` | 96 | 64 |
+| `EPOCHS` | 2 | 1 |
 
 Reducing these does **not** undermine the learning — you are still observing real optimisation. It just completes faster.
 
@@ -106,4 +106,4 @@ No need to write a formal answer. This is for your own understanding before Acti
 
 ---
 
-🎓 **Complete** — proceed to [Activity 3](../activity-3/activity-3_start.md)
+🎓 **Complete** — proceed to [Activity 3](activity-3_start.md)

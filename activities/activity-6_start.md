@@ -78,4 +78,4 @@ Think about a dataset you have actually worked with — or one that is publicly 
 
 ---
 
-🎓 **Complete** — proceed to [Activity 7](../activity-7/activity-7_start.md)
+🎓 **Complete** — your coach will direct you next. The session schedule runs **Activity 8 (Extensions)** before **Activity 7 (Reflection)** — extensions while lab energy is still present, quiet reflection as a wind-down. Follow your coach's direction rather than the activity numbers here.

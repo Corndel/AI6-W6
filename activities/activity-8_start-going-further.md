@@ -1,5 +1,7 @@
 # Activity 8 (Going Further): Extensions
 
+> 📋 **Schedule note:** This activity runs before Activity 7 (Reflection) in the session plan — extensions while lab energy is still present. Your coach will direct you to Activity 7 once this block is complete.
+
 **Primary KSBs:** B1 — Initiative and self-directed learning; S9 — Refine or re-engineer models and pipelines
 
 🎯 **Learning Objective:** Choose one extension experiment, run it, and record your findings in the experiment log — producing additional Task 6 evidence for B1
@@ -46,14 +48,13 @@ Record as **Run 2** in your experiment log. Note the scheduler in the Scheduler 
 
 ## Option B — Freeze the Encoder
 
-📓 **Notebook:** Find or add a cell to freeze the base model weights before training:
+📓 **Notebook:** Find the `RUN_FREEZE_ENCODER` variable (in the Going Further section) and set it to `True`:
 
 ```python
-for param in model.base_model.parameters():
-    param.requires_grad = False
+RUN_FREEZE_ENCODER = True
 ```
 
-Run training with the same preset as your group run.
+The notebook will then freeze the DistilBERT backbone (`model.distilbert`) before training, leaving only the classification head with trainable weights. Run the freeze encoder cell to execute the comparison run.
 
 After training:
 
@@ -84,7 +85,7 @@ Answer these questions:
 
 > ⚠️ Only proceed if your organisation's policies permit use of external cloud logging services.
 
-📓 **Notebook:** Open `handouts/Optional_WandB.md` and follow the setup instructions.
+📘 **Handout:** Open `handouts/Optional_WandB.md` in your Jupyter file browser (left sidebar) and follow the setup instructions.
 
 After logging your run:
 

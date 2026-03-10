@@ -32,7 +32,7 @@ The main message throughout:
 | S31 & K28 — Horizon scanning | Part E horizon scan (afternoon) |
 | B1 — Initiative and self-directed learning | Extensions; horizon scan; reflection |
 | B3 — Communication | Shareback; stakeholder framing prompts |
-| B5 — Data quality and uncertainty | Data quality discussion (pre-lunch) |
+| B5 — Data quality and uncertainty | Data quality discussion (early afternoon) |
 
 ---
 
@@ -76,7 +76,7 @@ across the room and makes the learning concrete.
 
 ---
 
-## Full-day session plan (4–4.5 hours teaching time)
+## Full-day session plan (approximately 5 hours teaching time)
 
 This schedule assumes a 09:00 start with a 45-minute lunch break, finishing around 14:30.
 Adjust the start time to suit your cohort; the internal proportions are what matter.

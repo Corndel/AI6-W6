@@ -75,4 +75,4 @@ Look at the generalisation gap across all three presets. Is there a pattern betw
 
 ---
 
-🎓 **Complete** — proceed to [Activity 5](../activity-5/activity-5_start.md)
+🎓 **Complete** — proceed to [Activity 5](activity-5_start.md)

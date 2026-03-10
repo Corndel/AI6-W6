@@ -70,17 +70,23 @@ Work in groups of **2–4**. Answer both questions in 2–3 sentences each.
 
 ## 🚀 Extension
 
-Modify the convergence threshold:
+In the convergence check cell (Cell 19), the threshold is currently hardcoded:
 
 ```python
-CONVERGENCE_THRESHOLD = 0.005   # stricter
+converged = final_delta < 0.01
 ```
 
-Re-run the check. Does your run now count as converged?
+Edit this value directly to make the threshold stricter:
+
+```python
+converged = final_delta < 0.005   # stricter
+```
+
+Re-run the cell. Does your run now count as converged?
 
 - What would using a stricter threshold mean in practice?
 - In a high-stakes deployment (medical, legal, financial), would you use a stricter or looser threshold — and why?
 
 ---
 
-🎓 **Complete** — proceed to [Activity 6](../activity-6/activity-6_start.md)
+🎓 **Complete** — proceed to [Activity 6](activity-6_start.md)

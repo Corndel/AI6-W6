@@ -1,5 +1,7 @@
 # Activity 7: Reflection & Horizon Scan
 
+> 📋 **Schedule note:** In the session plan this activity runs after Activity 8 (Extensions) — your coach will direct you here once the extension block is complete. If you have arrived here directly, that is fine too.
+
 **Primary KSBs:** K18 — Mathematical and statistical principles; B1 — Initiative and self-directed learning; S31 & K28 — Horizon scanning
 
 🎯 **Learning Objective:** Write your K18 and B1 reflections in your own words, and find a credible horizon scan source suitable for your Task 6 submission
@@ -102,4 +104,4 @@ Write 3–4 sentences. This could go directly into your Task 6 S31/K28 reflectio
 
 ---
 
-🎓 **Complete** — you have finished the core workshop. If time allows, proceed to [Activity 8 (Going Further)](../activity-8-going-further/activity-8_start-going-further.md)
+🎓 **Complete** — you have finished the core workshop. If time allows, proceed to [Activity 8 (Going Further)](activity-8_start-going-further.md)
