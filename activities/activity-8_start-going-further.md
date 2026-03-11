@@ -107,6 +107,8 @@ If your answer is no, that is as valuable as yes — explain what would need to 
 
 This answer is your B1 evidence: you tried something beyond the core task, formed an opinion, and can justify it.
 
+💡 **Want a more structured format for your Task 6 submission?** Open `handouts/Tuning_Decision_Log_Template.md` in your file browser. It gives you a structured six-section template — context, baseline, experiments, decision, evidence, next steps — that maps directly onto the kind of explainable, auditable experiment record that S9 is looking for. You can fill it in for the run you just did, or use it as the basis for the "before and after comparison" in your Task 6 upload. It is more detailed than the experiment log table, and the two work well together: log for recording as you go, Decision Log for the polished write-up.
+
 ---
 
 🎓 **Complete** — you have finished Workshop 6W. Well done.

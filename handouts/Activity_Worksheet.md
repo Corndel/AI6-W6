@@ -53,7 +53,7 @@ Record your baseline before you change anything — this is your Task 6 "before"
 | Run 2 (optional) | | | | | | | | | | | |
 | Run 3 (optional) | | | | | | | | | | | |
 
-*(Generalisation gap = train performance − validation performance. A widening gap suggests memorisation rather than generalisation.)*
+*(Generalisation gap = train accuracy − validation accuracy. Use accuracy or F1-macro here, not loss — this keeps the sign consistent across groups: a positive gap means training outperformed validation, which is expected and healthy in small amounts. A large or growing positive gap suggests memorisation rather than generalisation. A negative gap is rare and usually a sign that something is wrong with the training setup.)*
 
 **Convergence check (complete after running the convergence cells):**
 
@@ -202,6 +202,7 @@ If you're stuck with Task 6 (not part of the workshop), you could lean on this w
 |---|---|---|
 | Before/after performance comparison (upload) | Baseline + trained metrics from Part B | ☐ |
 | S9 reflection: specific metrics used | Part B experiment log + Part C Q1 | ☐ |
+| S14 reflection: interpreting statistical metrics in context | Part C Q5 (loss vs F1-macro) + Activity 6 data quality discussion | ☐ |
 | S31/K28 reflection: horizon scan source | Part E | ☐ |
 | K18 reflection: maths → technique link | Part C Q1–Q2 + convergence check | ☐ |
 | B1 reflection: initiative and self-directed learning | Extensions (Part D) + Part E | ☐ |

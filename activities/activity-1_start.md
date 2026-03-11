@@ -2,6 +2,8 @@
 
 > ⏱️ **This is a warm-up — 15 minutes total.** There is nothing to install or submit. The goal is to arrive in the room, reconnect with your cohort, and start thinking.
 
+> 📋 **Open your worksheet now:** This activity maps to **Part A** of `handouts/Activity_Worksheet.md`. Open it in your Jupyter file browser (left sidebar) or in a text editor alongside this file. You will record your curve diagnoses there — it is your evidence document for the day and feeds directly into Task 6.
+
 **Primary KSB:** B3 — Acts inclusively when collaborating with people from technical and non-technical backgrounds. Contributing to knowledge sharing, management and empowerment across the broader team.
 
 🎯 **Learning Objective:** Read training curves and begin connecting the diagnostic vocabulary to patterns you already recognise
@@ -38,7 +40,9 @@ For each curve, agree as a group on the most likely cause before moving on.
 
 💡 **Tip:** Focus on what the *validation* line is doing relative to the *training* line — not just whether training loss is going down.
 
-✅ **Checkpoint:** You have a written cause for each curve before your coach reveals the answers.
+📋 **Thinking further (no image needed):** The worksheet has a fourth scenario — training loss barely moves at all, and *neither* does validation performance. This is a different failure mode from the three curves above: the model is not overfitting (validation is fine), it is simply not learning at all. What would you check first? Write your answer in **Question 4 of Part A** of the Activity Worksheet. Common causes include a learning rate so low the weights barely update, a frozen layer that should be trainable, or a bug in the training loop.
+
+✅ **Checkpoint:** You have a written cause for each curve, and a written answer to Question 4, before your coach reveals the answers.
 
 ---
 

@@ -25,6 +25,22 @@ Your coach will assign your group one of three learning rate presets:
 
 📓 **Notebook:** Find the preset cell and change `"JUST_RIGHT"` to your group's assigned value. Do **not** run the cell yet.
 
+Once you have set your preset, run **Cell 15** — it will print the actual numerical learning rate that corresponds to your preset, like this:
+
+```
+Preset: TOO_HIGH -> learning_rate = 0.005
+```
+
+Record this value in the **LR value** column of your experiment log. The three preset values are:
+
+| Preset | Actual learning rate |
+|---|---|
+| TOO_LOW | 0.000001 (1×10⁻⁶) |
+| JUST_RIGHT | 0.00002 (2×10⁻⁵) |
+| TOO_HIGH | 0.005 (5×10⁻³) |
+
+These numbers represent the step size for each weight update. Notice how `TOO_HIGH` is 5,000 times larger than `TOO_LOW` — that difference in scale is what produces the dramatically different curve shapes you are about to observe.
+
 ---
 
 ## 📝 Task 2 — Make a Prediction First
@@ -94,6 +110,8 @@ Answer these questions in your experiment log:
 3. What is your generalisation gap at the **end** of training?
 
    > Generalisation gap = train performance − validation performance
+
+   💡 **Which metric to use for this:** Use accuracy or F1-macro, not loss, for the gap column in your experiment log. When a model is working well, training accuracy will be slightly higher than validation accuracy, giving a small positive number. If the gap is large and growing over epochs, the model is overfitting — memorising training examples rather than generalising. Using loss would give you the opposite sign (train loss *lower* than val loss for a healthy model), which makes it harder to compare across groups. Stick to accuracy-based gap throughout.
 
 4. Does your curve match your prediction from Task 2?
 
