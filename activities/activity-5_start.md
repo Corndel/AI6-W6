@@ -16,15 +16,43 @@
 
 📓 **Notebook:** Find and run the **convergence check cells** (labelled `6b`).
 
-These cells compute the **loss delta** between consecutive epochs — how much did loss change from one step to the next?
+These cells read the training log produced by your run and compute the **loss delta** between the last two epochs — how much did loss change from one step to the next?
+
+With the default 2-epoch setting, your output will look like this:
 
 ```
-Epoch 2 → 3 loss delta: 0.041   ← still moving
-Epoch 3 → 4 loss delta: 0.008   ← approaching convergence
-Epoch 4 → 5 loss delta: 0.003   ← converged within threshold
+==================================================
+CONVERGENCE CHECK
+==================================================
+  Epoch 1 loss : 0.8420
+  Epoch 2 loss     : 0.6310
+  Delta (change)              : 0.2110
+
+  ⚠  This run has NOT clearly converged.
+     Training loss is still changing meaningfully.
+     Practical question: is the remaining improvement worth
+     the additional compute cost and time for this business goal?
+
+Business framing:
+  You ran 2 epoch(s) on 800 training examples.
+  Consider: how would you justify this compute spend to a project manager?
+  Would a shorter run have been 'good enough' for the goal?
+
+Sustainability note:
+  Every training epoch consumes energy. The threshold you choose for
+  'good enough' convergence is also an environmental and cost decision,
+  not just a mathematical one.
 ```
 
-If the delta falls below the threshold (default: `0.01`), the run is considered converged.
+Or, if the delta is small enough:
+
+```
+  ✓  This run APPEARS TO HAVE CONVERGED within the time budget.
+     Further epochs are unlikely to produce significant improvement.
+     Stopping here is a defensible engineering decision.
+```
+
+The threshold is `0.01` — if `Delta (change)` is below that, the cell judges the run as converged. With only 2 epochs the delta will usually be quite large (the model is still moving), which is expected: it is an honest reflection of a short run, not a sign that something went wrong.
 
 📘 **Convergence in plain English:** Think of a kettle approaching boiling point. The temperature is still rising, but each additional second adds less heat gain than the last. At some point, waiting longer gives you nothing more — you are just burning energy. A training run works the same way. The question is not whether to stop, but *when*.
 

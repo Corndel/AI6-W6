@@ -50,6 +50,39 @@ and almost always pre-installed. It runs entirely offline using the synthetic CS
 It teaches the same Unit 6 concepts (SGD, learning rate, convergence, generalisation gap)
 and all worksheet tasks apply unchanged.
 
+### ⚠️ Label noise in Plan B — read this before delivering
+
+The backup notebook runs with `NOISE_FRACTION = 0.25` active by default. This means that
+before any training happens, **25% of the training labels are randomly corrupted** — a
+quarter of examples get a wrong label assigned.
+
+**Why it is there:** The noise makes the differences between TOO_LOW, JUST_RIGHT, and
+TOO_HIGH much sharper and easier to see. Without noise, the three presets can converge
+towards similar final accuracy; with noise, the instability of TOO_HIGH becomes much more
+visible and the pedagogical contrast is clearer.
+
+**What it changes for you:**
+
+- **Accuracy ceiling:** No matter how well the learning rate is tuned, Plan B will not
+  produce validation accuracy much above **70–75%** on this 3-class problem. That is not
+  a bug — it is the mathematical consequence of 25% label noise. A perfect model cannot
+  score above approximately 75% when a quarter of its training labels are wrong.
+
+- **Comparing results across the room:** If some learners are on the main notebook and
+  some are on Plan B, their absolute accuracy figures are not directly comparable. During
+  the Activity 4 share-back, make this explicit: *"Plan B results have a lower ceiling
+  because the data has intentional noise. The shape of the curve and the pattern across
+  presets still tell the same story."*
+
+- **Teaching opportunity in Activity 6:** You can use this directly in the data quality
+  discussion: *"Your training data for Plan B had 25% label noise baked in. That is a
+  controlled version of something that happens in real annotation pipelines. How did that
+  affect what you could conclude from your results?"*
+
+**How to disable the noise:** Open Cell 2 and change `NOISE_FRACTION = 0.25` to
+`NOISE_FRACTION = 0.0`. This produces a clean run. Learning rate effects will still be
+visible, but the contrast between presets is less dramatic.
+
 ---
 
 ## Environment-specific guidance
@@ -188,7 +221,52 @@ The most practical options are an **Azure VM** or an **Azure Machine Learning co
 
 ---
 
-## Common error messages and fixes
+### Google Colab
+
+Colab is the lowest-friction option for most learners — no local setup, no firewall issues,
+and Google's network can reach `huggingface.co` reliably. It is listed as "Option B" in
+the README and is a valid alternative to local or cloud-VM delivery.
+
+**Setup (run these cells at the top of a new Colab notebook):**
+
+```python
+# Cell 1 — clone the repo
+!git clone https://github.com/Corndel/AI6-W6.git
+%cd AI6-W6
+```
+
+```python
+# Cell 2 — install dependencies
+!pip install -r requirements.txt -q
+```
+
+Then navigate in the Colab file browser (folder icon, left sidebar) to
+`AI6-W6/lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` and open it.
+
+**Colab-specific notes:**
+
+- **Runtime type:** The default CPU runtime is sufficient. If GPU is available (Runtime →
+  Change runtime type → T4 GPU), training will be noticeably faster, but the learning
+  objectives are fully achievable on CPU.
+
+- **Session timeouts:** Colab sessions time out after 90 minutes of inactivity and
+  after a maximum of 12 hours (free tier). If a learner's session disconnects mid-training,
+  they will lose their kernel state and need to re-run all cells from the top. Pre-warn
+  learners to keep their browser tab active.
+
+- **File persistence:** Files saved to the Colab runtime (`/content/AI6-W6/`) are lost
+  when the session ends. Ask learners to download their worksheet at the end of the
+  session (right-click in the file browser → Download) so they retain their experiment log
+  and Part C reflections for Task 6.
+
+- **Model caching:** HuggingFace model weights download to `/root/.cache/huggingface/` on
+  Colab. This cache is lost when the session ends — each new session requires a fresh
+  download. Pre-run the cache command if you are demonstrating on your own Colab instance
+  before learners connect.
+
+- **W&B (Activity 8 Option D):** Weights & Biases works on Colab. The `wandb login`
+  step requires pasting an API key in the notebook output area — this is straightforward
+  on Colab and works the same as on a local machine.
 
 ### `TypeError: only integer scalar arrays can be converted to a scalar index`
 

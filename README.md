@@ -132,6 +132,15 @@ Read the introduction above first to understand the scenario. You may also wish 
 - `activities/` — numbered learner activity files (this scaffold)
 - `lab/` — notebooks and sample data
 - `handouts/` — learner worksheet + cheat sheet + plain‑English explainer + decision‑log template + glossary
+
+  | Handout | When to open it |
+  |---|---|
+  | `Activity_Worksheet.md` | Open at the start of Activity 1; keep it alongside the activities all day. This is your evidence document — Part B is your experiment log, Part C is your reflection, Part E is your horizon scan. |
+  | `Cheat_Sheet.md` | Quick reference throughout the day. If you forget what "generalisation gap" means or want to remind yourself of the convergence rule, look here first. |
+  | `Fine_Tuning_in_Plain_English.md` | Read before or after the opening talk track (09:15). Contains the "graduate hire" and "tailoring a suit" analogies in full — useful for Worksheet Part C Question 3. |
+  | `Unit6_Maths_Words_Glossary.md` | Vocabulary reference for K18 questions. One page covering loss, gradient, SGD, learning rate, convergence, generalisation, and regularisation. |
+  | `Tuning_Decision_Log_Template.md` | A structured six-section template for documenting your tuning decisions in a way that is auditable and explainable. Useful for the S9 evidence in Task 6. Works alongside the experiment log: log for recording live, Decision Log for the polished write-up. |
+  | `Optional_WandB.md` | Activity 8 Option D only. Experiment tracking with Weights & Biases. Only use if your organisation's policies permit external cloud logging services. |
 - `slides/` — workshop slide deck
 - `coach/` — coach playbook (timings, prompts, troubleshooting)
 - `assets/` — training curve images used in Activity 1 and slides

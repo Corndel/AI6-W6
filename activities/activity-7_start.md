@@ -26,6 +26,8 @@ Answer Questions 1–4 as a minimum. If time allows, continue to Questions 5–7
 
 > These are not model answers. Write what *you* found. A result that did not go as expected is as valid — and often more interesting — than a textbook clean run.
 
+> 💡 **For Question 3 (fine-tuning vs retraining vs optimisation):** The worksheet hints at two analogies — "tailoring a suit" and "graduate hire". These appeared in the opening talk track. If they are not fresh, open `handouts/Fine_Tuning_in_Plain_English.md` in your file browser — it contains both analogies written out in full. Read the first three sections (takes about 2 minutes) and then write your answer in your own words, using the analogies as a springboard rather than copying them.
+
 ✅ **Checkpoint:** Questions 1–4 completed in your own words, using the Unit 6 vocabulary, before you move on to Task 2.
 
 ---
@@ -104,4 +106,4 @@ Write 3–4 sentences. This could go directly into your Task 6 S31/K28 reflectio
 
 ---
 
-🎓 **Complete** — you have finished the core workshop. If time allows, proceed to [Activity 8 (Going Further)](activity-8_start-going-further.md)
+🎓 **Complete** — you have finished the core workshop. Well done.

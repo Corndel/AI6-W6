@@ -105,6 +105,8 @@ the model approaches a minimum.
 Trade-off: a decaying schedule adds a hyperparameter (the schedule shape) to tune.
 For short fine-tuning runs, a well-chosen fixed rate often performs comparably.
 
+> ⚠️ **In this workshop's notebook:** When you set `SCHEDULER = "linear"` (Activity 8 Option A), the notebook includes a **10% warmup phase** before the decay begins. This means the learning rate actually *increases* for the first 10% of training steps, then decays linearly to zero for the remainder. If you look at any diagnostic output showing per-step LR, you will see a small initial rise followed by a longer decline — this is expected and correct, not a bug. The warmup prevents instability in the very early steps when the model's gradients are noisiest.
+
 ---
 
 ## Compute cost and sustainability

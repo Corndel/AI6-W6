@@ -446,6 +446,49 @@ The only material that does not transfer is the DistilBERT-specific vocabulary (
 transformer fine-tuning). Acknowledge this briefly and frame Plan B as "the same maths
 engine in a simpler vehicle — which actually makes it easier to see what is happening."
 
+### ⚠️ Important: Plan B runs with intentional label noise (NOISE_FRACTION = 0.25)
+
+This is the single most important thing to know about Plan B, and it is not mentioned
+anywhere in the learner-facing materials.
+
+**What it does:** Before any training begins, the backup notebook randomly corrupts 25%
+of the training labels — a quarter of examples get the wrong label assigned. This is
+controlled by `NOISE_FRACTION = 0.25` in Cell 2 of `02_backup_sgd_text_classifier_learning_rate.ipynb`.
+
+**Why it is there:** Label noise makes the differences between the three learning rate
+presets far more visible. With clean data, `TOO_HIGH` still oscillates but eventually
+settles near a reasonable result. With noisy labels, `TOO_HIGH` is much more unstable
+and the contrast between presets is sharper — which makes for better discussion.
+
+**What it means for you as coach:**
+
+- Plan B's maximum achievable validation accuracy is hard-capped at approximately **75%
+  for a balanced 3-class problem**, even with a perfect model. A model cannot learn to
+  classify correctly when 25% of its training examples have wrong labels. If a learner
+  asks "why can't we get above 75%?" — that is why.
+
+- Plan B results will look worse than main-notebook results in absolute terms.
+  If any part of your cohort is on the main notebook and part is on Plan B, make this
+  explicit when they share results during Activity 4. A learner on Plan B achieving 68%
+  may have done better *relative to what is possible on that dataset* than a learner on
+  the main notebook achieving 80%.
+
+- This is also a genuinely useful teaching moment for Activity 6 (data quality). You can
+  use it explicitly: *"The backup notebook adds label noise to your training data. That is
+  a synthetic version of something that happens in real datasets — inconsistent annotation,
+  mislabelled examples, ambiguous cases. What does that mean for the conclusions you can
+  draw from your results?"*
+
+**How to turn it off:** If you want a clean Plan B run (e.g. to compare results fairly
+across the room), open Cell 2 and set:
+
+```python
+NOISE_FRACTION = 0.0
+```
+
+The rest of the notebook runs identically. Learning rate effects will still be visible
+but the contrast between presets will be less dramatic.
+
 ---
 
 ## Common learner confusions (and how to respond)
