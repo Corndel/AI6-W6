@@ -23,15 +23,17 @@ Your coach will assign your group one of three learning rate presets:
 | `JUST_RIGHT` | A sensible default — should produce a clean curve |
 | `TOO_HIGH` | Large steps — may overshoot, oscillate, or crash |
 
-📓 **Notebook:** Find the preset cell and change `"JUST_RIGHT"` to your group's assigned value. Do **not** run the cell yet.
+📓 **Notebook:** Find the speed-dial cell (Cell 4) and change `"JUST_RIGHT"` to your group's assigned value. Then **run Cell 4** to register the change in the notebook.
 
-Once you have set your preset, run **Cell 15** — it will print the actual numerical learning rate that corresponds to your preset, like this:
+Next, run **Cell 15** — it will confirm the actual numerical learning rate that corresponds to your preset, like this:
 
 ```
 Preset: TOO_HIGH -> learning_rate = 0.005
 ```
 
-Record this value in the **LR value** column of your experiment log. The three preset values are:
+Record this value in the **LR value** column of your experiment log. Do **not** run the training cell (Cell 17) yet — complete Tasks 2 and 3 first.
+
+The three preset values are:
 
 | Preset | Actual learning rate |
 |---|---|
@@ -76,7 +78,7 @@ Work in groups of **3–4** (pairs if numbers require). Agree before you start:
 The Trainer will print a progress bar as each batch runs, then a results table after each epoch. Look for these columns:
 
 ```
-Epoch | Training Loss | Validation Loss | Accuracy | F1
+Epoch | Training Loss | Validation Loss | Accuracy | F1 Macro
   1   |    0.8420     |     0.7910      |  0.6410  | 0.6380
   2   |    0.6310     |     0.6240      |  0.7280  | 0.7190
 ```
