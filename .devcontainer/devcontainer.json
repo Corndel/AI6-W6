@@ -4,10 +4,6 @@
     "context": "..",
     "dockerfile": "Dockerfile"
   },
-  "workspaceFolder": "/workspace",
-  "mounts": [
-    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
-  ],
   "forwardPorts": [8888],
   "portsAttributes": {
     "8888": {
@@ -15,7 +11,7 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "echo '✅ Environment ready. Open lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb in VS Code, or run: jupyter lab --ip=0.0.0.0 --no-browser --NotebookApp.token=\"\"'",
+  "postCreateCommand": "echo '✅ Environment ready. Open lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb to begin.'",
   "customizations": {
     "vscode": {
       "extensions": [
