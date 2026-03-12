@@ -173,12 +173,13 @@ This activity warms up the diagnostic thinking learners will use during the lab.
 
 This block is deliberately generous. Setup friction is real and unpredictable.
 
-Ask learners to:
-1. Clone or unzip the repo
-2. Create and activate their virtual environment
-3. Install dependencies (`pip install -r requirements.txt`)
-4. Launch Jupyter Lab
-5. Run the install cell (Cell 1) and the imports cell (Cell 2) to confirm everything loads
+Ask learners to follow the steps in **Activity 2** for their environment:
+
+- **Codespaces:** environment is already built — open the notebook and select the kernel. No cloning or pip install needed.
+- **Local laptop or cloud VM:** clone the repo, create and activate a venv, pip install, launch Jupyter Lab.
+- **Colab:** clone into a new blank notebook, pip install, open the notebook from the file browser.
+
+All three paths end at the same point: Cell 1 (installs) and Cell 2 (imports) running without errors.
 
 **If downloads are slow or blocked:** switch to Plan B now. Do not spend more than 20
 minutes troubleshooting network issues in a room of 20 learners. Plan B teaches the same

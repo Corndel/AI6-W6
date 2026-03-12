@@ -149,46 +149,59 @@ Read the introduction above first to understand the scenario. You may also wish 
 
 ## Where should I run this workshop?
 
-This workshop is **cloud‑neutral**. You don't need AWS/Azure/GCP services — you just need Python and (for the main notebook) internet access to download model weights.
+This workshop is **cloud‑neutral**. You do not need AWS/Azure/GCP — you just need a
+browser, or Python and internet access to download model weights.
 
-Pick the option that creates the least friction for your cohort:
+Pick the option that creates the least friction for your cohort. **GitHub Codespaces is
+the recommended starting point** for most learners — no local setup, no SSH, no
+firewall configuration.
 
-### Option A: Local laptop + venv
+### Option A: GitHub Codespaces (recommended)
+Best for most learners. Requires only a browser and a free GitHub account. The repo is
+public — any learner can be running in under 2 minutes with no local installation. Files
+persist between sessions. Well within the GitHub Free tier for a 5-hour workshop.
+See `TROUBLESHOOTING.md` for full setup steps and notes on cost, file persistence, and
+organisations that may have Codespaces disabled.
+
+### Option B: Local laptop + venv
 Best when learners can install Python and you want them to practise a "real repo" workflow.
+Clone the repo, create a virtual environment, and `pip install -r requirements.txt`.
+See the Setup section below.
 
-### Option B: Google Colab or similar
-Best when you want the lowest setup time and reliable downloads. (Use synthetic/public data only.)
+### Option C: Google Colab
+Good alternative when learners do not have a GitHub account. Google's network reaches
+`huggingface.co` reliably. Note that files are lost when the session ends — ask learners
+to download their worksheet before closing. See `TROUBLESHOOTING.md` for setup steps.
 
-### Option C: Pluralsight Cloud Sandbox (AWS or Azure)
-
-This is the recommended delivery environment for cohorts on the AI6 programme.
-Full step-by-step instructions for both providers are in `TROUBLESHOOTING.md`.
-
-**AWS sandbox — recommended setup:**
-- Launch an EC2 instance: Ubuntu 22.04, `t3.medium` or larger (avoid `t2.micro` — insufficient RAM)
-- Open inbound port 8888 in the security group for Jupyter
-- Install dependencies: `pip install -r requirements.txt`
-- Pre-cache the model before the session (see below and `TROUBLESHOOTING.md`)
-- Launch Jupyter with `jupyter lab --ip=0.0.0.0 --port=8888 --no-browser`
-
-**Azure sandbox — recommended setup:**
-- Create an Azure VM: Ubuntu 22.04, `Standard_B2s` minimum, `Standard_D2s_v3` preferred
-- Or use an Azure ML compute instance: `Standard_DS11_v2` is the smallest comfortable option
-- Install dependencies and pre-cache as above
-
-**Minimum requirements (either provider):**
-- Linux VM with Python 3.10 or later
-- At least 4 GB RAM (DistilBERT requires ~500 MB; 4 GB gives comfortable headroom)
-- Outbound HTTPS to `huggingface.co` and `pypi.org` (or use Plan B if blocked)
-
-> Pre-cache the model before the session. Run the cache command
-> once per machine (see `TROUBLESHOOTING.md`).
+### Option D: Pluralsight Cloud Sandbox (AWS or Azure)
+For cohorts where the delivery environment is a managed Pluralsight sandbox. Full
+step-by-step instructions — including the correct ordering of install steps, how to
+handle the Jupyter token URL, Windows SSH guidance, and sandbox time-limit caveats —
+are in `TROUBLESHOOTING.md`. Read that section before the day; the setup has more steps
+than the other options.
 
 ---
 
-## Setup (local / sandbox)
+## Setup (local laptop or sandbox VM)
 
-### 1) Create and activate a virtual environment
+If you are using **Codespaces or Colab**, skip this section — setup instructions for
+those environments are in `TROUBLESHOOTING.md`.
+
+### 1) Get the repo
+
+```bash
+git clone https://github.com/Corndel/AI6-W6.git
+cd AI6-W6
+```
+
+Or, if you downloaded a zip, unzip it and `cd` into the resulting folder:
+
+```bash
+unzip AI6-W6-main.zip
+cd AI6-W6-main
+```
+
+### 2) Create and activate a virtual environment
 
 ```bash
 python -m venv .venv
@@ -196,13 +209,13 @@ source .venv/bin/activate  # macOS/Linux
 # .venv\Scripts\activate  # Windows PowerShell
 ```
 
-### 2) Install dependencies
+### 3) Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3) Launch Jupyter
+### 4) Launch Jupyter
 
 ```bash
 jupyter lab

@@ -14,9 +14,21 @@
 
 ## 📝 Task 1 — Clone and Set Up
 
-> If your coach has pre-provisioned a cloud sandbox, follow their instructions for accessing it. Otherwise, follow the steps below for your environment.
+> If your coach has pre-provisioned a cloud sandbox or Codespace, follow their instructions for accessing it. Otherwise, follow the steps below for your environment.
 
-**Option A — Local laptop or cloud VM (recommended)**
+**Option A — GitHub Codespaces**
+
+Your coach may have shared a Codespace link, or you can create one yourself:
+
+1. Go to [https://github.com/Corndel/AI6-W6](https://github.com/Corndel/AI6-W6)
+2. Click the green **Code** button → **Codespaces** tab → **Create codespace on main**
+3. Wait for the environment to build (2–3 minutes). The repo files and all dependencies are installed automatically — there is no separate `pip install` step.
+4. When the VS Code interface loads, open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` from the file browser (left sidebar).
+5. Select the Python kernel when prompted (choose the `/usr/bin/python3` or `Python 3.x.x` option).
+
+That is it — skip the `jupyter lab` terminal step. Codespaces is running Jupyter inside VS Code already.
+
+**Option B — Local laptop or cloud VM**
 
 ⌨️ **Terminal:**
 
@@ -29,9 +41,9 @@ source .venv/bin/activate        # macOS / Linux
 pip install -r requirements.txt
 ```
 
-**Option B — Google Colab**
+**Option C — Google Colab**
 
-In a new Colab notebook, run these cells in order:
+Go to [colab.research.google.com](https://colab.research.google.com), sign in, and create a **new blank notebook**. Run these cells in order:
 
 ```python
 # Cell 1 — clone the repo
@@ -40,13 +52,13 @@ In a new Colab notebook, run these cells in order:
 ```
 
 ```python
-# Cell 2 — install dependencies
+# Cell 2 — install dependencies (takes 2–3 minutes — wait for it to finish)
 !pip install -r requirements.txt -q
 ```
 
 Then open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` from the Colab file browser (folder icon on the left). Skip the `jupyter lab` step — Colab is already running a notebook environment. Note: model downloads on Colab use Google's network, which is generally fast and unblocked, so the HuggingFace fallback to the synthetic CSV is unlikely to activate.
 
-✅ **Checkpoint:** No errors during `pip install`. You should see packages including `transformers`, `torch`, and `datasets` in the output.
+✅ **Checkpoint:** No errors during setup. You should see packages including `transformers`, `torch`, and `datasets` available (either pre-installed by Codespaces, or confirmed in the `pip install` output).
 
 ⚠️ **Warning:** If you are in a Pluralsight sandbox and package downloads are slow or blocked, tell your coach now — switching to Plan B early costs less time than waiting 20 minutes.
 
