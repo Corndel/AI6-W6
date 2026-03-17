@@ -90,9 +90,6 @@ If metrics barely move:
 | 📓 | **Notebook** — action to take in Jupyter |
 | ✅ | **Checkpoint** — verify your progress |
 | 🤔 | **Reflect** — think deeply about this |
-| 💡 | **Tip/Hint** — helpful suggestion |
-| ⚠️ | **Warning** — do not miss this |
-| 📘 | **Explanation** — background theory |
 | 🚀 | **Extension** — optional stretch challenge |
 | 🎓 | **Complete** — activity finished |
 
