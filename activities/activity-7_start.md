@@ -1,6 +1,6 @@
 # Activity 7: Reflection & Horizon Scan
 
-> 📋 **Schedule note:** In the session plan this activity runs after Activity 8 (Extensions) — your coach will direct you here once the extension block is complete. If you have arrived here directly, that is fine too.
+> 📋 **Note:** Your coach will direct you here either after the Going Further extensions or directly from Activity 6. Either route is fine — this is the reflective wind-down for the day.
 
 **Primary KSBs:** K18 — Mathematical and statistical principles; B1 — Initiative and self-directed learning; S31 & K28 — Horizon scanning
 
@@ -8,15 +8,15 @@
 
 ## 📋 Expected Outputs
 
-- Part C of the Activity Worksheet completed (Questions 1–4 minimum)
-- Part E of the Activity Worksheet completed (one source found and recorded)
+- Part C of the [Activity Worksheet](../handouts/Activity_Worksheet.md) completed (Questions 1–4 minimum)
+- Part E of the [Activity Worksheet](../handouts/Activity_Worksheet.md) completed (one source found and recorded)
 - Task 6 submission material ready to use
 
 ---
 
 ## 📝 Task 1 — Part C Reflection (individual, silent)
 
-Complete Part C of the Activity Worksheet **individually**, in silence.
+Complete Part C of the [Activity Worksheet](../handouts/Activity_Worksheet.md) **individually**, in silence.
 
 Answer Questions 1–4 as a minimum. If time allows, continue to Questions 5–7.
 
@@ -26,7 +26,7 @@ Answer Questions 1–4 as a minimum. If time allows, continue to Questions 5–7
 
 > These are not model answers. Write what *you* found. A result that did not go as expected is as valid — and often more interesting — than a textbook clean run.
 
-> 💡 **For Question 3 (fine-tuning vs retraining vs optimisation):** The worksheet hints at two analogies — "tailoring a suit" and "graduate hire". These appeared in the opening talk track. If they are not fresh, open `handouts/Fine_Tuning_in_Plain_English.md` in your file browser — it contains both analogies written out in full. Read the first three sections (takes about 2 minutes) and then write your answer in your own words, using the analogies as a springboard rather than copying them.
+> 💡 **For Question 3 (fine-tuning vs retraining vs optimisation):** The worksheet hints at two analogies — "tailoring a suit" and "graduate hire". These appeared in the opening talk track. If they are not fresh, open [`Fine_Tuning_in_Plain_English.md`](../handouts/Fine_Tuning_in_Plain_English.md) in your file browser — it contains both analogies written out in full. Read the first three sections (takes about 2 minutes) and then write your answer in your own words, using the analogies as a springboard rather than copying them.
 
 ✅ **Checkpoint:** Questions 1–4 completed in your own words, using the Unit 6 vocabulary, before you move on to Task 2.
 
@@ -50,7 +50,7 @@ Credible sources include:
 - `training carbon footprint ML`
 - `catastrophic forgetting mitigation language models`
 
-Record your source in the Part E table of the Activity Worksheet:
+Record your source in the Part E table of the [Activity Worksheet](../handouts/Activity_Worksheet.md):
 
 | Field | Your answer |
 |---|---|
@@ -88,7 +88,7 @@ Before you close your laptop, confirm which Task 6 items you have produced today
 | S9 reflection: specific metrics used | Part B experiment log + Part C Q1 | ☐ |
 | S31/K28 reflection: horizon scan source | Part E | ☐ |
 | K18 reflection: maths → technique link | Part C Q1–Q2 + convergence check | ☐ |
-| B1 reflection: initiative and self-directed learning | Extension (Activity 8) + Part E | ☐ |
+| B1 reflection: initiative and self-directed learning | Extension (Going Further) + Part E | ☐ |
 | B5 reflection: data quality and uncertainty | Part C Q6 / Activity 6 | ☐ |
 
 💡 **Tip:** You do not need to write new content for Task 6. Today's experiment log, reflections, and horizon scan entry are the raw material. Your Task 6 submission is the polished version of what you produced here.

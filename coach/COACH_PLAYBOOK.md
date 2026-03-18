@@ -67,19 +67,22 @@ You could divide learners into three groups before the session. Assign each grou
 Write the assignments on a shared board or include them in a shared slide so there is no
 ambiguity when you reach the lab section.
 
-### 5) "Share back" slides (prepare before the day)
-Prepare three blank slide slots (one per group) with columns:
+### 5) "Share back" slide (already in `slides/`)
+`slides/Group_Results_Slide.pptx` has the pre-built results table with columns:
 **Preset | LR value | Train loss (end) | Val loss (end) | Accuracy | F1-macro | Generalisation gap | Notes**
 
-Learners copy their numbers in during the share-back. This creates a visible comparison
-across the room and makes the learning concrete.
+Open it before the session and project it during the Activity 4 share-back. Learners read
+their experiment log values into the table. This creates a visible comparison across the
+room and makes the learning concrete. For cohorts larger than three groups, duplicate the
+relevant preset row.
 
 ---
 
 ## Full-day session plan (approximately 5 hours teaching time)
 
-This schedule assumes a 09:00 start with a 45-minute lunch break, finishing around 14:30.
-Adjust the start time to suit your cohort; the internal proportions are what matter.
+This schedule assumes a 09:00 start with a 60-minute lunch break, finishing around 16:00.
+Adjust the start time and proportions to suit your cohort — the block ordering matters more than the exact times.
+The afternoon blocks include natural flex points; coaches should feel free to extend or compress based on room energy.
 
 ---
 
@@ -154,6 +157,13 @@ from a script.
 #### 09:30–09:45 — Curve diagnosis mini-activity (Activity 1, 15 minutes)
 
 Display the **"Activity 1 — Warm-Up: Curve Diagnosis"** header slide, then move to the curves image slide.
+
+The three curve images are in `assets/` — display them in order A, B, C. The answer key (coach only):
+- **Curve A** (`curve_a.png`) — JUST_RIGHT: smooth steady decline, train and val tracking each other with a small healthy gap
+- **Curve B** (`curve_b.png`) — TOO_HIGH: oscillating, unstable — loss goes up and down rather than converging
+- **Curve C** (`curve_c.png`) — TOO_LOW: barely moves — loss is still near 1.0 after 5 epochs, tiny improvement
+
+Do not reveal these labels until after learners have committed their answers in the worksheet. The images use neutral titles (Curve A/B/C) so the filenames and plot titles give nothing away.
 
 Ask learners to work in **groups of 2–4** to match each curve to its most likely cause before you reveal the answers. Task 3 asks which of the "You've seen this before" examples felt familiar — invite brief responses, one sentence each. This is a reaction, not a construction task: learners are choosing from examples they have just seen, not hunting for their own analogies.
 
@@ -272,13 +282,13 @@ This last question is directly relevant to B3 and is worth dwelling on for 5 min
 
 ---
 
-### LUNCH BREAK (12:00–12:45, 45 minutes)
+### LUNCH BREAK (12:00–13:00, 60 minutes)
 
 ---
 
-### AFTERNOON BLOCK 1 — Re-entry and convergence (12:45–13:15, 30 minutes)
+### AFTERNOON BLOCK 1 — Re-entry and convergence (13:00–13:30, 30 minutes)
 
-#### 12:45–13:00 — Afternoon re-entry (15 minutes)
+#### 13:00–13:15 — Afternoon re-entry (15 minutes)
 
 Do not launch straight back into the notebook after lunch. Re-anchor the room.
 
@@ -289,7 +299,7 @@ Display the shared results slide and ask one question:
 Take two or three responses. Most learners will not yet have a precise answer. That
 is the entry point for the convergence concept.
 
-#### 13:00–13:15 — Convergence: concept and code (15 minutes)
+#### 13:15–13:30 — Convergence: concept and code (15 minutes)
 
 Ask learners to return to the notebook and run the **convergence check cells** (Cells 6b).
 
@@ -313,7 +323,7 @@ Prompt:
 
 ---
 
-### AFTERNOON BLOCK 2 — Data quality discussion (13:15–13:30, 15 minutes)
+### AFTERNOON BLOCK 2 — Data quality discussion (13:30–13:45, 15 minutes)
 
 Facilitated whole-group discussion. Do not skip this block — it is the only B5 scaffold
 in the workshop.
@@ -355,7 +365,7 @@ Draw out the following points if they do not emerge naturally:
 
 ---
 
-### AFTERNOON BLOCK 3 — Extensions (13:30–14:00, 30 minutes)
+### AFTERNOON BLOCK 3 — Extensions (13:45–14:15, 30 minutes)
 
 Ask learners to choose **one** extension from the list below. Pairs or individuals are
 both fine. Time-box firmly.
@@ -376,9 +386,9 @@ production? Why or why not?"
 
 ---
 
-### AFTERNOON BLOCK 4 — Reflection and horizon scan (14:00–14:25, 25 minutes)
+### AFTERNOON BLOCK 4 — Reflection and horizon scan (14:15–14:45, 30 minutes)
 
-#### 14:00–14:10 — Worksheet Part C reflection (10 minutes)
+#### 14:15–14:30 — Worksheet Part C reflection (15 minutes)
 
 Ask learners to complete Part C (Questions 1–4 minimum) individually in silence.
 These written reflections are their K18 and B1 evidence.
@@ -389,7 +399,7 @@ Prompt before they start:
 > gradient, generalisation gap, convergence. If you can explain these to someone who
 > was not in this room, you have understood them."
 
-#### 14:10–14:25 — Horizon scan: Part E (15 minutes)
+#### 14:30–14:45 — Horizon scan: Part E (15 minutes)
 
 Ask learners to complete **Part E** of the Activity Worksheet individually.
 
@@ -415,7 +425,7 @@ PyTorch release notes, NeurIPS or ICLR proceedings.
 
 ---
 
-### AFTERNOON BLOCK 5 — Wrap and EPA moment (14:25–14:30, 5 minutes)
+### AFTERNOON BLOCK 5 — Wrap and EPA moment (14:45–16:00, 75 minutes flex + wrap)
 
 Close the day with a brief round-up and an explicit link to Task 6.
 

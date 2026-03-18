@@ -78,4 +78,4 @@ Think about a dataset you have actually worked with — or one that is publicly 
 
 ---
 
-🎓 **Complete** — your coach will direct you next. The session schedule runs **Activity 8 (Extensions)** before **Activity 7 (Reflection)** — extensions while lab energy is still present, quiet reflection as a wind-down. Follow your coach's direction rather than the activity numbers here.
+🎓 **Complete** — your coach will direct you next. Your coach will direct you on whether to do the **Going Further** extensions or move straight to **Activity 7 (Reflection)** — it depends on time and energy in the room. Extensions tend to work better before the reflective wind-down, but either order is fine.

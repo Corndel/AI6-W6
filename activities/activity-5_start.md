@@ -62,7 +62,7 @@ The threshold is `0.01` — if `Delta (change)` is below that, the cell judges t
 
 ## 📝 Task 2 — Record Your Result
 
-Complete the convergence section of your experiment log (Part B of the Activity Worksheet):
+Complete the convergence section of your experiment log (Part B of the [Activity Worksheet](../handouts/Activity_Worksheet.md)):
 
 | | Your answer |
 |---|---|
@@ -98,7 +98,7 @@ Work in groups of **2–4**. Answer both questions in 2–3 sentences each.
 
 ## 🚀 Extension
 
-In the convergence check cell (Cell 19), the threshold is currently hardcoded:
+In the **convergence check cell** (labelled `## 6b) Did your training converge?`), the threshold is currently hardcoded:
 
 ```python
 converged = final_delta < 0.01

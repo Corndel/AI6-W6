@@ -8,28 +8,23 @@
 
 - Virtual environment created and dependencies installed
 - Jupyter Lab running with the main notebook open
-- Baseline metrics recorded in your experiment log (Part B of the Activity Worksheet)
+- Baseline metrics recorded in your experiment log (Part B of the [Activity Worksheet](../handouts/Activity_Worksheet.md))
 
 ---
 
 ## 📝 Task 1 — Clone and Set Up
 
-> If your coach has pre-provisioned a cloud sandbox or Codespace, follow their instructions for accessing it. Otherwise, follow the steps below for your environment.
+> Follow the steps below for your environment.
 
-**Option A — GitHub Codespaces**
+**Option A — GitHub Codespaces (recommended)**
 
-Your coach may have shared a Codespace link, or you can create one yourself:
+If you are reading this inside a Codespace, the environment is already set up. You do not need to install anything.
 
-1. Go to [https://github.com/Corndel/AI6-W6](https://github.com/Corndel/AI6-W6)
-2. Click the green **Code** button → **Codespaces** tab → **Create codespace on main**
-3. Wait for the environment to build (3–6 minutes). Watch the terminal at the bottom — you will see pip installing packages including torch. Wait until the terminal prompt returns before opening the notebook.
-4. When the VS Code interface loads, open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` from the file browser (left sidebar).
-5. If a kernel picker appears (top-right of the notebook), click **Python Environments** and choose the option under `/usr/local/bin/` — this is where all the packages were installed.
-6. If you see yellow underlines on import lines, press `Ctrl+Shift+P` → **Python: Select Interpreter** and choose the same Python version shown in the kernel (top-right of the notebook).
+1. Open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` from the file browser (left sidebar).
+2. The kernel (`Python 3 (AI6 Workshop)`) should be selected automatically. If a kernel picker appears, choose the option under `/usr/local/bin/`.
+3. If import lines show yellow underlines, press `Ctrl+Shift+P` → **Python: Select Interpreter** and choose the same Python version shown in the kernel (top-right of the notebook).
 
-That is it — skip the `jupyter lab` terminal step. Codespaces is running Jupyter inside VS Code already.
-
-> 💡 **Why two Python selectors?** VS Code separates the kernel (which runs cells) from the Pylance linter (which checks syntax). They can point at different versions. The kernel is what matters for running the workshop — the linter only affects yellow underlines.
+That is it — no terminal commands needed.
 
 **Option B — Local laptop or cloud VM**
 
@@ -79,9 +74,9 @@ jupyter lab
 
 📓 **Notebook:** Open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb`
 
-Run **Cell 1** (installs) and **Cell 2** (imports). Wait for both to complete without errors.
+Run the **install cell** (labelled `# If you need to install dependencies`) and the **imports cell** (labelled `import os`). Wait for both to complete without errors.
 
-✅ **Checkpoint:** Cell 2 completes with no `ImportError`. You should see a message confirming the DistilBERT tokeniser loaded (or a cached-model confirmation).
+✅ **Checkpoint:** The imports cell completes with no `ImportError`. You should see a message confirming the DistilBERT tokeniser loaded (or a cached-model confirmation).
 
 💡 **Tip:** If you see a message like `Some weights of DistilBertForSequenceClassification were not initialized...` — that is expected. The classification head is randomly initialised before fine-tuning.
 
@@ -91,7 +86,7 @@ Run **Cell 1** (installs) and **Cell 2** (imports). Wait for both to complete wi
 
 Before you change anything, run the **baseline evaluation cells**.
 
-These cells evaluate the model *before* any fine-tuning. Record the results in your **experiment log** (Part B of the Activity Worksheet):
+These cells evaluate the model *before* any fine-tuning. Record the results in your **experiment log** (Part B of the [Activity Worksheet](../handouts/Activity_Worksheet.md)):
 
 | Field | Your value |
 |---|---|

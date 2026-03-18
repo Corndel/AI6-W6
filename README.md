@@ -90,6 +90,9 @@ If metrics barely move:
 | 📓 | **Notebook** — action to take in Jupyter |
 | ✅ | **Checkpoint** — verify your progress |
 | 🤔 | **Reflect** — think deeply about this |
+| 💡 | **Tip/Hint** — helpful suggestion |
+| ⚠️ | **Warning** — do not miss this |
+| 📘 | **Explanation** — background theory |
 | 🚀 | **Extension** — optional stretch challenge |
 | 🎓 | **Complete** — activity finished |
 
@@ -120,7 +123,7 @@ Read the introduction above first to understand the scenario. You may also wish 
 
 | Activity | Title | Focus |
 |---|---|---|
-| [Activity 8](activities/activity-8_start-going-further.md) | Extensions | Schedule comparison / freeze encoder / error analysis / W&B tracking |
+| [Going Further](activities/going-further_start.md) | Extensions (optional) | Schedule comparison / freeze encoder / error analysis / W&B tracking / SGD comparison |
 
 ---
 
@@ -137,7 +140,7 @@ Read the introduction above first to understand the scenario. You may also wish 
   | `Fine_Tuning_in_Plain_English.md` | Read before or after the opening talk track (09:15). Contains the "graduate hire" and "tailoring a suit" analogies in full — useful for Worksheet Part C Question 3. |
   | `Unit6_Maths_Words_Glossary.md` | Vocabulary reference for K18 questions. One page covering loss, gradient, SGD, learning rate, convergence, generalisation, and regularisation. |
   | `Tuning_Decision_Log_Template.md` | A structured six-section template for documenting your tuning decisions in a way that is auditable and explainable. Useful for the S9 evidence in Task 6. Works alongside the experiment log: log for recording live, Decision Log for the polished write-up. |
-  | `Optional_WandB.md` | Activity 8 Option D only. Experiment tracking with Weights & Biases. Only use if your organisation's policies permit external cloud logging services. |
+  | `Optional_WandB.md` | Going Further Option D only. Experiment tracking with Weights & Biases. Only use if your organisation's policies permit external cloud logging services. |
 - `slides/` — workshop slide deck
 - `coach/` — coach playbook (timings, prompts, troubleshooting)
 - `assets/` — training curve images used in Activity 1 and slides

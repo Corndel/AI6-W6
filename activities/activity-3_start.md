@@ -9,7 +9,7 @@
 - Group preset assigned (`TOO_LOW`, `JUST_RIGHT`, or `TOO_HIGH`)
 - Pre-run prediction written down *before* training starts
 - Training run completed (or a crashed/stalled run documented — that is also a valid result)
-- Metrics recorded in the experiment log (Part B of the Activity Worksheet)
+- Metrics recorded in the experiment log (Part B of the [Activity Worksheet](../handouts/Activity_Worksheet.md))
 
 ---
 
@@ -23,15 +23,15 @@ Your coach will assign your group one of three learning rate presets:
 | `JUST_RIGHT` | A sensible default — should produce a clean curve |
 | `TOO_HIGH` | Large steps — may overshoot, oscillate, or crash |
 
-📓 **Notebook:** Find the speed-dial cell (Cell 4) and change `"JUST_RIGHT"` to your group's assigned value. Then **run Cell 4** to register the change in the notebook.
+📓 **Notebook:** Find the **speed dials cell** (labelled `## Speed dials` near the top) and change `"JUST_RIGHT"` to your group's assigned value. Then **run that cell** to register the change.
 
-Next, run **Cell 15** — it will confirm the actual numerical learning rate that corresponds to your preset, like this:
+Next, run the **LR preset cell** (labelled `## 5) Choose a learning rate preset`) — it will confirm the actual numerical learning rate that corresponds to your preset, like this:
 
 ```
 Preset: TOO_HIGH -> learning_rate = 0.005
 ```
 
-Record this value in the **LR value** column of your experiment log. Do **not** run the training cell (Cell 17) yet — complete Tasks 2 and 3 first.
+Record this value in the **LR value** column of your experiment log. Do **not** run the **training cell** (labelled `## 6) Train (fine‑tune)`) yet — complete Tasks 2 and 3 first.
 
 The three preset values are:
 
@@ -121,7 +121,7 @@ Answer these questions in your experiment log:
 
 ## 📝 Task 6 — Complete Your Experiment Log Entry
 
-Fill in Part B of the Activity Worksheet for this run:
+Fill in Part B of the [Activity Worksheet](../handouts/Activity_Worksheet.md) for this run:
 
 | Run ID | LR preset | LR value | Scheduler | Epochs | Train subset | Train loss (end) | Val loss | Accuracy | F1-macro | Gen. gap | Notes |
 |---|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---|
