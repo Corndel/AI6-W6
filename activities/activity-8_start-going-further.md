@@ -23,6 +23,7 @@ Pick **one** of the four options below. Time-box to **15–20 minutes**. Complet
 | B | Freeze the encoder — train classification head only | Learners interested in compute efficiency |
 | C | Error analysis — confusion matrix + 5 misclassifications | Learners who want to understand failure modes |
 | D | Experiment tracking with Weights & Biases (if your organisation allows) | Learners in organisations that use MLOps tooling |
+| E | SGD comparison notebook — run all three presets and read the curves | Any learner; fast, no download, connects to Activity 6 |
 
 ---
 
@@ -92,6 +93,21 @@ After logging your run:
 - What does a W&B run history give you that a notebook log does not?
 - If you had run 10 experiments today, how would a run-tracking tool change your ability to compare and reproduce results?
 - How does this connect to the reproducibility requirements of a production ML system?
+
+---
+
+## Option E — SGD Comparison Notebook
+
+Open `lab/02_backup_sgd_text_classifier_learning_rate.ipynb` in the file browser and run all cells.
+It takes under 30 seconds — no transformer, no download.
+
+The notebook runs all three presets (TOO_LOW, JUST_RIGHT, TOO_HIGH) simultaneously and plots them
+on the same axes. This shows something the main experiment could not: direct comparison of all three
+curve shapes, including **active divergence** in the TOO_HIGH run — validation loss increases each
+epoch rather than just plateauing.
+
+The notebook includes a full explanation of why each curve looks the way it does. After running it,
+answer the debrief questions in the notebook and record your reflections in Part C of your worksheet.
 
 ---
 
