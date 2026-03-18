@@ -20,6 +20,7 @@ setting up for the first time, **start with the section for your environment** u
 | Notebook hangs indefinitely on CPU | Machine is too slow | Reduce speed dials (see below) |
 | `FileNotFoundError: synth dataset` | Jupyter launched from wrong directory | See directory fix below |
 | `ValueError: eval_strategy` | transformers < 4.46 | Upgrade: `pip install "transformers>=4.46,<5"` |
+| Codespace disk full — `pip install` fails or kernel won't register | pip wheel cache not cleaned after install | Run `pip cache purge && rm -rf ~/.cache/huggingface`. Fresh Codespaces now run `pip cache purge` automatically after build. |
 | SSH refuses key with "Permissions too open" | `.pem` file needs restricted permissions | Run `chmod 400 your-key.pem` first |
 | `TypeError: Accelerator.unwrap_model() got an unexpected keyword argument` | `accelerate<1` installed; transformers needs 1.x | Run `pip install "accelerate>=1.0.0,<2" --upgrade` |
 | Pylance yellow underlines on imports in Codespaces | Pylance using wrong interpreter | `Ctrl+Shift+P` → Python: Select Interpreter → pick the version matching your kernel |
@@ -171,6 +172,8 @@ The `.vscode/settings.json` in the repo pre-configures both to `/usr/local/bin/p
 
 - **Model caching:** HuggingFace model weights cache normally inside the Codespace and
   persist between sessions on the same instance. No pre-caching step is needed.
+
+- **Disk space:** The devcontainer runs `pip cache purge` after installing packages, reclaiming ~2 GB of wheel cache. Total disk use after build is around 6–7 GB, well within the 30 GB Codespace limit. If you hit disk-full errors on an older Codespace (pre this fix), run `pip cache purge && rm -rf ~/.cache/huggingface` to recover space, then delete and recreate the Codespace.
 
 - **Training speed:** The default Codespace uses a 2-core CPU. Training with the default
   speed dials (800 examples, 2 epochs) will take around 8–12 minutes per run. If this is
