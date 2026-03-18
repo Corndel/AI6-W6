@@ -16,6 +16,7 @@ setting up for the first time, **start with the section for your environment** u
 | `ModuleNotFoundError: No module named 'torch'` | PyTorch not installed | Run `pip install -r requirements.txt` or pre-install |
 | Training cell crashes with `NaN loss` | `TOO_HIGH` preset on this hardware — expected | Record it; it is a teaching moment |
 | `TRAINING_FAILED` is undefined | Cells run out of order | Restart kernel and run all cells top to bottom |
+| "Some weights of DistilBertForSequenceClassification were not initialized" | Expected — classification head is always randomly initialised | Not an error. See the note in the notebook above the baseline cell. |
 | Notebook hangs indefinitely on CPU | Machine is too slow | Reduce speed dials (see below) |
 | `FileNotFoundError: synth dataset` | Jupyter launched from wrong directory | See directory fix below |
 | `ValueError: eval_strategy` | transformers < 4.46 | Upgrade: `pip install "transformers>=4.46,<5"` |
