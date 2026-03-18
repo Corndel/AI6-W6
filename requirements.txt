@@ -1,7 +1,7 @@
 # Core workshop dependencies
 # (Upper bounds help keep the workshop stable across environments.)
 
-datasets>=2.16.0,<3
+datasets>=3.0.0,<5
 transformers>=4.46.0,<5
 accelerate>=0.26.0,<1
 
