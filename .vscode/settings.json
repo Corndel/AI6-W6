@@ -1,5 +1,3 @@
 {
-  "python.defaultInterpreterPath": "/usr/local/bin/python",
-  "jupyter.notebookFileRoot": "${workspaceFolder}",
-  "jupyter.defaultKernel": "workshop6w"
+  "jupyter.notebookFileRoot": "${workspaceFolder}"
 }
