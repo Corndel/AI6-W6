@@ -22,11 +22,14 @@ Your coach may have shared a Codespace link, or you can create one yourself:
 
 1. Go to [https://github.com/Corndel/AI6-W6](https://github.com/Corndel/AI6-W6)
 2. Click the green **Code** button → **Codespaces** tab → **Create codespace on main**
-3. Wait for the environment to build (2–3 minutes). The repo files and all dependencies are installed automatically — there is no separate `pip install` step.
+3. Wait for the environment to build (3–6 minutes). Watch the terminal at the bottom — you will see pip installing packages including torch. Wait until the terminal prompt returns before opening the notebook.
 4. When the VS Code interface loads, open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` from the file browser (left sidebar).
-5. Select the Python kernel when prompted (choose the `/usr/bin/python3` or `Python 3.x.x` option).
+5. If a kernel picker appears (top-right of the notebook), click **Python Environments** and choose the option under `/usr/local/bin/` — this is where all the packages were installed.
+6. If you see yellow underlines on import lines, press `Ctrl+Shift+P` → **Python: Select Interpreter** and choose the same Python version shown in the kernel (top-right of the notebook).
 
 That is it — skip the `jupyter lab` terminal step. Codespaces is running Jupyter inside VS Code already.
+
+> 💡 **Why two Python selectors?** VS Code separates the kernel (which runs cells) from the Pylance linter (which checks syntax). They can point at different versions. The kernel is what matters for running the workshop — the linter only affects yellow underlines.
 
 **Option B — Local laptop or cloud VM**
 

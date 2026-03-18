@@ -20,6 +20,8 @@ setting up for the first time, **start with the section for your environment** u
 | `FileNotFoundError: synth dataset` | Jupyter launched from wrong directory | See directory fix below |
 | `ValueError: eval_strategy` | transformers < 4.46 | Upgrade: `pip install "transformers>=4.46,<5"` |
 | SSH refuses key with "Permissions too open" | `.pem` file needs restricted permissions | Run `chmod 400 your-key.pem` first |
+| `TypeError: Accelerator.unwrap_model() got an unexpected keyword argument` | `accelerate<1` installed; transformers needs 1.x | Run `pip install "accelerate>=1.0.0,<2" --upgrade` |
+| Pylance yellow underlines on imports in Codespaces | Pylance using wrong interpreter | `Ctrl+Shift+P` → Python: Select Interpreter → pick the version matching your kernel |
 | Jupyter token URL shows `localhost` but won't open | Terminal shows localhost; you need the public IP | Replace `localhost` with the EC2 public IP |
 
 ---
@@ -135,6 +137,15 @@ That is it. The repo files are already present and all packages are pre-installe
 > **If the postCreateCommand fails** (visible in the Codespace terminal as a pip error):
 > open a terminal (Terminal → New Terminal) and run `pip install -r requirements.txt`
 > manually.
+
+**If the kernel or imports don't work immediately:**
+
+VS Code in Codespaces has two independent Python selectors that can get out of sync:
+
+- **Kernel** (top-right of the notebook) — this actually runs the cells. Click it, choose **Python Environments**, and pick the version under `/usr/local/bin/`. This is the one that matters.
+- **Pylance interpreter** (bottom-right status bar, or `Ctrl+Shift+P` → Python: Select Interpreter) — controls linting and yellow underlines only. If imports show yellow underlines after the kernel is set correctly, set this to match.
+
+The `.vscode/settings.json` in the repo pre-configures both to `/usr/local/bin/python` so neither picker should appear. If it does, use the steps above.
 
 **Codespaces-specific notes:**
 
