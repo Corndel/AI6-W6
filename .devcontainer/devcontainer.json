@@ -1,7 +1,7 @@
 {
   "name": "AI6 Workshop 6W",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "postCreateCommand": "pip install -r requirements.txt && python -m ipykernel install --user --name=workshop6w --display-name='AI6 Workshop 6W'",
+  "postCreateCommand": "pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r requirements.txt && python -m ipykernel install --user --name=workshop6w --display-name='AI6 Workshop 6W'",
   "customizations": {
     "vscode": {
       "extensions": [
