@@ -54,7 +54,11 @@ Or, if the delta is small enough:
 
 The threshold is `0.01` — if `Delta (change)` is below that, the cell judges the run as converged. With only 2 epochs the delta will usually be quite large (the model is still moving), which is expected: it is an honest reflection of a short run, not a sign that something went wrong.
 
-📘 **Convergence in plain English:** Think of a kettle approaching boiling point. The temperature is still rising, but each additional second adds less heat gain than the last. At some point, waiting longer gives you nothing more — you are just burning energy. A training run works the same way. The question is not whether to stop, but *when*.
+📘 **Convergence in plain English:** Think of charging a phone. The first 50% fills quickly — you can watch the bar move. The next 30% is noticeably slower. The last 20%, from 80% to 100%, takes almost as long as everything before it combined. The battery chemistry means each additional unit of charge is harder to push in than the last.
+
+This is why public EV chargers routinely cut off at 80% — the cost of the final 20% in time, heat, and wear is not worth it for most journeys. The car is already good enough to use.
+
+A training run works the same way. Early epochs produce large drops in loss. Later epochs produce smaller and smaller improvements. At some point, the marginal gain from another epoch is not worth the compute cost. The question is not whether to stop — it is *when good enough is good enough*, and that is an engineering decision, not a mathematical one.
 
 ✅ **Checkpoint:** The convergence check cell ran without error and produced a delta value or verdict.
 
@@ -90,7 +94,7 @@ Work in groups of **2–4**. Answer both questions in 2–3 sentences each.
 
 > _______________________________________________________________
 
-💡 **If you're finding it abstract:** think about any professional process where there is a point of diminishing returns — where continuing past a certain point costs more than it gains. Training a model past convergence is that problem, with measurable numbers attached. If an example from your own work comes to mind naturally, use it. If not, the kettle analogy is sufficient.
+💡 **If you're finding it abstract:** think about any professional process where there is a point of diminishing returns — where continuing past a certain point costs more than it gains. Training a model past convergence is that problem, with measurable numbers attached. If an example from your own work comes to mind naturally, use it. If not, the phone charging analogy is sufficient: fast early gains, slowing progress, a practical cutoff point that makes sense even before you reach the theoretical maximum.
 
 🤔 **Reflect:** Your Task 6 K18 question asks you to relate mathematical principles to the design and use of a model. This question is that connection made explicit.
 
