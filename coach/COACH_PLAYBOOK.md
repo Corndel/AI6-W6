@@ -61,6 +61,8 @@ If training is too slow:
 - Set `MAX_LENGTH` to 64
 - Set `EPOCHS = 1`
 
+**On epoch count:** The default is 2, which keeps the training run under 15 minutes on a 2-core Codespace and gives a minimal but readable curve. Setting `EPOCHS = 3` produces a more instructive curve (three data points make it easier to see whether improvement is decelerating) but may run up to 30 minutes on a slower machine. Decide before the session based on your environment test — if one epoch completes in under 5 minutes, 3 epochs is worth it.
+
 ### 4) Group formation idea
 You could divide learners into three groups before the session. Assign each group a preset:
 `TOO_LOW`, `JUST_RIGHT`, or `TOO_HIGH`. For larger cohorts, run two groups per preset.
