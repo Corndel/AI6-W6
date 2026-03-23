@@ -77,6 +77,12 @@ Overfitting pattern:
 If metrics barely move:
 - that can still be a useful result. It often means you don't have enough signal in the data (or you didn't train long enough for this learning rate).
 
+**Why loss and accuracy can move independently:**
+
+Loss cares about *how confident the model was when it got something wrong*. A model that said "90% positive" when the label was negative gets punished much harder than one that said "40% positive". Accuracy only asks whether the top-ranked answer was correct. It ignores the margins. So a model can be getting meaningfully less wrong on the inside (loss falling) while still picking the same answer on the outside (accuracy flat). Loss tends to move first.
+
+> Further reading: [Neural Networks Part 6: Cross Entropy (StatQuest / Josh Starmer)](https://www.youtube.com/watch?v=6ArSys5qHAU)
+
 ---
 
 ## Emoji Guide
