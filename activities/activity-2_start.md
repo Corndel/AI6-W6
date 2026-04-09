@@ -41,7 +41,11 @@ pip install -r requirements.txt
 
 **Option C — Google Colab**
 
-Go to [colab.research.google.com](https://colab.research.google.com), sign in, and create a **new blank notebook**. Run these cells in order:
+Go to [colab.research.google.com](https://colab.research.google.com), sign in, and create a **new blank notebook**.
+
+First, connect to a GPU runtime for faster training: **Runtime > Change runtime type > T4 GPU**. Once connected, run `!nvidia-smi` in a cell to confirm the GPU is active.
+
+Then run these cells in order:
 
 ```python
 # Cell 1 — clone the repo
@@ -50,11 +54,11 @@ Go to [colab.research.google.com](https://colab.research.google.com), sign in, a
 ```
 
 ```python
-# Cell 2 — install dependencies (takes 2–3 minutes — wait for it to finish)
-!pip install -r requirements.txt -q
+# Cell 2 — install dependencies
+!pip install -q datasets transformers[torch] accelerate
 ```
 
-Then open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` from the Colab file browser (folder icon on the left). Skip the `jupyter lab` step — Colab is already running a notebook environment. Note: model downloads on Colab use Google's network, which is generally fast and unblocked, so the HuggingFace fallback to the synthetic CSV is unlikely to activate.
+Then open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` from the Colab file browser (folder icon on the left). Skip the `jupyter lab` step. With a T4 GPU, each epoch takes around 30 seconds and the full financial_phrasebank dataset will load directly from HuggingFace without falling back to the synthetic CSV.
 
 ✅ **Checkpoint:** No errors during setup. You should see packages including `transformers`, `torch`, and `datasets` available (either pre-installed by Codespaces, or confirmed in the `pip install` output).
 
@@ -107,7 +111,7 @@ Find the **speed dial cells** near the top of the notebook. They look like:
 ```python
 TRAIN_SUBSET = 800
 MAX_LENGTH   = 96
-EPOCHS       = 2
+EPOCHS       = 3
 ```
 
 💡 **Tip — if training is going to be slow:**
@@ -116,7 +120,7 @@ EPOCHS       = 2
 |---|---|---|
 | `TRAIN_SUBSET` | 800 | 300–400 |
 | `MAX_LENGTH` | 96 | 64 |
-| `EPOCHS` | 2 | 1 |
+| `EPOCHS` | 3 | 1 |
 
 Reducing these does **not** undermine the learning — you are still observing real optimisation. It just completes faster.
 

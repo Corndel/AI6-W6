@@ -1,5 +1,4 @@
 # Core workshop dependencies
-# (Upper bounds help keep the workshop stable across environments.)
 
 datasets>=3.0.0,<5
 transformers>=4.46.0,<5
@@ -16,3 +15,6 @@ matplotlib>=3.8.0
 # Notebooks
 jupyterlab>=4.0.0
 ipywidgets>=7.0.0
+
+# Experiment tracking (optional - used in Going Further Option D)
+wandb>=0.16.0

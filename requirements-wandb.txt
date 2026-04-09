@@ -1,5 +1,0 @@
-# Optional extras for experiment tracking
-
--r requirements.txt
-wandb>=0.16.0
-tensorboard>=2.14.0
