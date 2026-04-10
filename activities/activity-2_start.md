@@ -55,7 +55,8 @@ Then run these cells in order:
 
 ```python
 # Cell 2 — install dependencies
-!pip install -q datasets transformers[torch] accelerate
+# datasets is pinned to 3.6.0 -- later versions have a known issue loading financial_phrasebank
+!pip install -q datasets==3.6.0 transformers[torch] accelerate
 ```
 
 Then open `lab/01_finetune_distilbert_optimisation_in_the_wild.ipynb` from the Colab file browser (folder icon on the left). Skip the `jupyter lab` step. With a T4 GPU, each epoch takes around 30 seconds and the full financial_phrasebank dataset will load directly from HuggingFace without falling back to the synthetic CSV.
