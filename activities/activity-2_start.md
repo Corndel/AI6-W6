@@ -85,6 +85,12 @@ Run the **install cell** (labelled `# If you need to install dependencies`) and 
 
 💡 **Tip:** If you see a message like `Some weights of DistilBertForSequenceClassification were not initialized...` — that is expected. The classification head is randomly initialised before fine-tuning.
 
+> 📋 **When loading the dataset you may see a prompt asking whether to run custom code:**
+>
+> ![HuggingFace trust_remote_code prompt](../lab/prompt.webp)
+>
+> Type `y` and press Enter to continue. This is a standard HuggingFace security check for datasets that include a loading script. It is safe to confirm here.
+
 ---
 
 ## 📝 Task 3 — Record Your Baseline

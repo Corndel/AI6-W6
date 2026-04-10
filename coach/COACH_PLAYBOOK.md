@@ -57,7 +57,7 @@ AutoModelForSequenceClassification.from_pretrained('distilbert-base-uncased', nu
 
 ### 3) Speed dials (keep it runnable)
 If training is too slow:
-- Reduce `TRAIN_SUBSET` to 300–500
+- Reduce `TRAIN_SUBSET` to 300-500
 - Set `MAX_LENGTH` to 64
 - Set `EPOCHS = 1`
 
@@ -192,6 +192,8 @@ Ask learners to follow the steps in **Activity 2** for their environment:
 - **Colab:** clone into a new blank notebook, pip install, open the notebook from the file browser.
 
 All three paths end at the same point: Cell 1 (installs) and Cell 2 (imports) running without errors.
+
+> **Known prompt during dataset loading:** when the notebook loads the `financial_phrasebank` dataset from HuggingFace, learners may see a terminal prompt asking whether to run custom code. They should type `y` and press Enter. This is a standard HuggingFace security check and is safe to confirm. Let learners know in advance so nobody is caught off guard or thinks something has gone wrong. The screenshot in Activity 2 shows exactly what this looks like.
 
 **If downloads are slow or blocked:** switch to Plan B now. Do not spend more than 20
 minutes troubleshooting network issues in a room of 20 learners. Plan B teaches the same
